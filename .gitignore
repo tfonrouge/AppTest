@@ -5,3 +5,7 @@
 /appTestFs/build/classes/kotlin/jvm/main/
 /appTestLib/build/
 /build/
+/.kotlin/
+/.idea/artifacts/
+/.idea/modules/
+/appTestFs/.kotlin-js-store/
