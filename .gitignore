@@ -1,0 +1,7 @@
+# Project exclude paths
+/.gradle/
+/appTestFs/build/
+/appTestFs/build/classes/kotlin/js/main/
+/appTestFs/build/classes/kotlin/jvm/main/
+/appTestLib/build/
+/build/
