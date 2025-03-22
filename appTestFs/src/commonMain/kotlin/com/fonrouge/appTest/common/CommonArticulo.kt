@@ -6,7 +6,7 @@ import com.fonrouge.fsLib.common.ICommonContainer
 import com.fonrouge.fsLib.types.StringId
 import kotlinx.serialization.serializer
 
-object CommonArticulo : ICommonContainer<Articulo, StringId<Articulo>, ArticuloFilter>(
+data object CommonArticulo : ICommonContainer<Articulo, StringId<Articulo>, ArticuloFilter>(
     itemKClass = Articulo::class,
     idSerializer = serializer(),
     apiFilterSerializer = serializer(),

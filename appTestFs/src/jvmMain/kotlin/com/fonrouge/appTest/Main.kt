@@ -2,6 +2,7 @@ package com.fonrouge.appTest
 
 import com.fonrouge.appTest.services.DataItemService
 import com.fonrouge.appTest.services.DataListService
+import com.fonrouge.appTest.services.SelectService
 import com.fonrouge.fsLib.mongoDb.MongoDbPlugin
 import io.ktor.server.application.*
 import io.ktor.server.plugins.compression.*
@@ -27,6 +28,7 @@ fun Application.main() {
     val module = module {
         factoryOf(::DataItemService)
         factoryOf(::DataListService)
+        factoryOf(::SelectService)
     }
     kvisionInit(module)
 }

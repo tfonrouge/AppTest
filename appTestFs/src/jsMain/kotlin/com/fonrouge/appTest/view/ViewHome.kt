@@ -3,6 +3,7 @@ package com.fonrouge.appTest.view
 import com.fonrouge.appTest.common.CommonHome
 import com.fonrouge.appTest.config.ConfigViewImpl.Companion.ConfigViewHome
 import com.fonrouge.appTest.config.ConfigViewImpl.Companion.ConfigViewListArticulo
+import com.fonrouge.appTest.config.ConfigViewImpl.Companion.ConfigViewListCategoria
 import com.fonrouge.fsLib.layout.centeredMessage
 import com.fonrouge.fsLib.layout.formColumn
 import com.fonrouge.fsLib.lib.UrlParams
@@ -11,7 +12,6 @@ import com.fonrouge.fsLib.view.KVWebManager.routing
 import com.fonrouge.fsLib.view.View
 import io.kvision.core.AlignItems
 import io.kvision.core.Container
-import io.kvision.core.JustifyContent
 import io.kvision.html.Align
 import io.kvision.html.Div
 import io.kvision.html.button
@@ -39,6 +39,11 @@ class ViewHome(override var urlParams: UrlParams) : View<CommonHome, ApiFilter>(
             formColumn(1) {
                 button(icon = "fas fa-home", text = "Articulos").onClick {
                     ConfigViewListArticulo.navigateTo()
+                }
+            }
+            formColumn(1) {
+                button(icon = "fas fa-star", text = "Categorias").onClick {
+                    ConfigViewListCategoria.navigateTo()
                 }
             }
         }
